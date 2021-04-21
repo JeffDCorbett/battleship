@@ -25,7 +25,21 @@ let fiat = {
     color: "Medium Blue",
     passengers: 2,
     convertible: false,
-    mileage: 88000
+    mileage: 88000,
+    started: false,
+    start: function(){
+        this.started = true;
+    },
+    stop: function (){
+        this.started = false;
+    },
+    drive: function(){
+        if (this.started){
+            console.log("Zoom zoom");
+        } else {
+            console.log("You need to start the engine first!");
+        }
+    }
 };
 
 let taxi = {
@@ -54,3 +68,8 @@ if (worthALook) {
 } else {
     console.log("You should really pass on the " + taxi.make + " " + taxi.model);
 }
+
+fiat.drive();
+fiat.start();
+fiat.drive();
+fiat.stop();
