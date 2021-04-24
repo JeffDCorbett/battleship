@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Playlist</title>
+    <script>
+        function addSongs() {
+            let song1 = document.getElementById("song1");
+            let song2 = document.getElementById("song2");
+            let song3 = document.getElementById("song3");
+
+            song1.innerHTML = "Nero Forte, by Slip Knot";
+            song2.innerHTML = "Lola Montez, by Volbeat";
+            song3.innerHTML = "The End, by Papa Roach";
+        }
+
+        window.onload = addSongs;
+    </script>
+</head>
+<body>
+<h1>My Metal Playlist</h1>
+<ul id="playlist">
+    <li id="song1"></li>
+    <li id="song2"></li>
+    <li id="song3"></li>
+</ul>
+
+</body>
+</html>
