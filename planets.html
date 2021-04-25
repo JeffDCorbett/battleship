@@ -9,13 +9,13 @@
         }
     </style>
     <script>
-        function init() {
+        setTimeout( function () {
             let planet = document.getElementById("greenplanet");
             planet.innerHTML = "Red Alert: Hit by phaser fire!";
             planet.setAttribute("class", "redtext");
-        }
+        }, 10000);
 
-        window.onload = init;
+        // window.onload = init;
     </script>
 </head>
 <body>
