@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Planets</title>
+    <style>
+        .redtext {
+            color:red;
+        }
+    </style>
     <script>
-      function init() {
-        let planet = document.getElementById("greenplanet");
-        planet.innerHTML = "Red Alert: Hit by phaser fire!";
-      }
-      window.onload = init;
+        function init() {
+            let planet = document.getElementById("greenplanet");
+            planet.innerHTML = "Red Alert: Hit by phaser fire!";
+            planet.setAttribute("class", "redtext");
+        }
+
+        window.onload = init;
     </script>
 </head>
 <body>
-<h1>Green Planet</h1>
-<p id="greenplanet">All is well</p>
-<h1>Red Planet</h1>
-<p id="redplanet">Nothing to report</p>
-<h1>Blue Planet</h1>
-<p id="blueplanet">All systems A-OK</p>
+    <h1>Green Planet</h1>
+    <p id="greenplanet">All is well</p>
+    <h1>Red Planet</h1>
+    <p id="redplanet">Nothing to report</p>
+    <h1>Blue Planet</h1>
+    <p id="blueplanet">All systems A-OK</p>
 </body>
 </html>
