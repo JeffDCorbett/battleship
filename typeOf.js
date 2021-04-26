@@ -7,6 +7,7 @@ let test6;
 let test7 = {"abcdef": 123};
 let test8 = ["abcdef", 123];
 function test9(){return "abcdef"}
+let test10 = null;
 
 console.log(typeof test1);
 console.log(typeof test2);
@@ -17,3 +18,4 @@ console.log(typeof test6);
 console.log(typeof test7);
 console.log(typeof test8);
 console.log(typeof test9);
+console.log(typeof test10);
